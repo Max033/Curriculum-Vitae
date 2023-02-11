@@ -19,10 +19,16 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cambo&family=Diplomata&display=swap" rel="stylesheet">
 <body>
+    
+
+    
     <!--Nav-->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light flex-column">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,37 +58,50 @@
         </div>
     </nav>
 
-    <!--Seccion Principal-->
-    <section class="principal align-items-stretch">
+    <!------------------- Seccion Principal------------------->
+    <section class="principal align-items-stretch ">
         <div class="principal-1 d-flex flex-column justify-center align-items-center">
             <img class="imagen-principal" src="imagen/icon.png" alt="Foto de Maximiliano">
-            <h1>Hola, soy Maximiliano Iacoboni</h1>
-            <h2>Desarrollo sitios Web con las ultimas tecnologias y conceptos</h2>
+            
+            <h1 class="seccion-titulo">Soy Maximiliano Iacoboni</h1>
+            <h2 class="seccion-sub-titulo"> Creo programas empleando las ultimas herramientas y conceptos</h2>
         </div>
         <div class="principal-inferior">
            <!-- <img  class="imagen-principal-inferior img-fluid" src="imagen/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React."> -->
         </div>
     </section>
 
-    <!--About Me-->
-    <section id="sobre-mi" class="about-me seccion-oscura">
+    <!-------------------Seccion de About Me ------------------->
+    <section id="sobre-mi" class="about-me seccion-oscura flex-column">
         <div class="contenedor">
             <h2 class="seccion-titulo">Sobre mi</h2>
-            <p class="seccion-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis tempore qui.
-                Voluptatum, quidem! Corrupti molestias tempora saepe sed libero. Minus doloremque assumenda
-                eaque repellendus! Omnis nemo commodi quia reprehenderit.</p>
+            <h3 class="seccion-sub-titulo">Hola, soy Maximiliano Iacoboni </h3>
+
+            <p class="seccion-texto">
+                Soy Analista en sistemas, y actualmente me encuentro expandiendo mis conocimientos con diversos 
+                cursos en Back-End y profundizando Front-End, Desarrollo sitios Web todos los dias con distintas tecnologias.
+            </p>
+            <p class="seccion-texto">
+                Mi fuerte como lenguaje principal es Python, mas adelante en el portfolio podras encontrar algunos proyectos desarollados en este lenguaje
+                por otro lado utilizo JavaScrip, HTML5, CSS3, Boostrap, para El desarrollo de paginas Webs en las cuales tambien encotraras algunos proyectos desarrollados en estas tecnologias 
+            </p>
         </div>
     </section>
 
-    <!--Experiencia-->
-    <section id="Experiencia" class="experiencia seccion-clara">
-        <div class="container text-center">
+    <!-------------------Seccion deExperiencia------------------->
+    <section id="Experiencia" class="experiencia seccion-oscura">
+        <div class="container-fluid text-center d-flex">
             <div class="row">
+                <div> 
+                    <h2 class="seccion-titulo">Estudios</h2>
+                    <h3 class="seccion-sub-titulo">Estos son los estudios cursados hasta el momento.</h3>
+                </div>
+                
                 <!--Desarrollo Web-->
-                <div class="columna col-12 col-md-4">
+                <div class="columna col col-md-4 ">
                     <i class="bi bi-laptop"></i>
                     <p class="experiencia-titulo">Lenguajes de Programacion</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nostrum nobis, neque aliquam dolorem quaerat recusandae.</p>
+                    <p class="seccion-texto">Me considero lo que llaman un pythonista, es el lenguaje nativo con el que he aprendido aun que tengo majeno avanzado en los siguientes.</p>
                     <div class="badges-contenedor">
                         <span class="badge text-bg-primary">HTML</span>
                         <span class="badge text-bg-primary">CSS</span>
@@ -91,19 +110,25 @@
                     </div>
                 </div>
                 <!--Artuculos-->
-                <div class="columna col-12 col-md-4">
+                <div class="columna col col-md-4 ">
                     <i class="bi bi-laptop"></i>
-                    <p class="experiencia-titulo">Herramientas</p>                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nostrum nobis, neque aliquam dolorem quaerat recusandae.</p>
+                    <p class="experiencia-titulo">Herramientas</p>                        
+                    <p class="seccion-texto">
+                        Empleo las ultimas tecnologias en programacion de paginas web.
+                    </p>
                     <div class="badges-contenedor">
                         <span class="badge text-bg-primary">boostrap</span>
                         <span class="badge text-bg-primary">React</span>
                     </div>
                 </div>
                 <!--Estudios-->
-                <div class="columna col-12 col-md-4">
+                <div class="columna col col-md-4 ">
                     <i class="bi bi-laptop"></i>
-                    <p class="experiencia-titulo">Estudios</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nostrum nobis, neque aliquam dolorem quaerat recusandae.</p>
+                    <p class="experiencia-titulo ">Estudios</p>
+                    <p class="seccion-texto">
+                        Eterno estudiante, estudios realizados en la Universidad de Lujan, 
+                        actualmente expandiendo conocimientos en diversos cursos.
+                    </p>
                     <div class="badges-contenedor">
                         <span class="badge text-bg-primary">Argentina Programa 4.0</span>
                         <span class="badge text-bg-primary">Google Active</span>
@@ -114,20 +139,20 @@
         </div>
     </section>
 
-    <!--Proyectos-->                                                                                                                                                                                                                                            
-    <section id="Proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-        <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+    <!------------------- Seccion de Proyectos------------------->                                                                                                                                                                                                                                            
+    <section id="Proyectos" class="proyectos-recientes seccion-oscura d-flex flex-column ">
+        <h2 class="seccion-titulo ">Mis proyectos</h2>
         <h3 class="seccion-descripcion">Estos son algunos de mis proyectos recientes</h3>
         <!--Galeria de proyectos-->
-        <div class="container text-center proyectos-contenedor">
-            <div class="row">
+        <div class="container text-center  proyectos-contenedor">
+            <div class="row">   
                 <!--Proyecto 1-->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
-                        <img src="imagen/Captura de pantalla 2023-01-21 165704.png" alt="pagina web">
+                        <img src="imagen/Captura de pantalla 2023-01-21 165704.png"  alt="pagina web">
                         <div class="overlay">
                             <p>Pagina Web</p>
-                            <div class="iconos-contenedor">
+                            <div class="iconos-contenedor ">
                                 <a href="https://github.com/Max033" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github"></i>
                                 </a>
@@ -141,14 +166,14 @@
                 <!--Proyecto 2-->
                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="proyecto">
-                                        <img src="imagen/52714.jpg" alt="juego de la vida">
+                                        <img src="imagen/juego de la vida.png" alt="juego de la vida">
                                         <div class="overlay">
                                             <p>Game of Life</p>
                                             <div class="iconos-contenedor">
                                                 <a href="https://github.com/Max033" target="_blank" rel="noopener noreferrer">
                                                     <i class="bi bi-github"></i>
                                                 </a>
-                                                <a href="https://github.com/Max033/Curriculum-Vitae.git" target="_blank" rel="noopener noreferrer">
+                                                <a href="https://github.com/Max033/Game-of-life.git" target="_blank" rel="noopener noreferrer">
                                                     <i class="bi bi-laptop"></i>
                                                 </a>
                                             </div>                
@@ -158,9 +183,9 @@
                 <!--Proyecto 3-->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
-                        <img src="imagen/52894.jpg" alt="Proyecto 1">
+                        <img src="imagen/52894.jpg"  alt="Proyecto 1">
                         <div class="overlay">
-                            <p>Proyecto 3</p>
+                            <p>Proximamente</p>
                             <div class="iconos-contenedor">
                                 <a href="https://github.com/Max033" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github"></i>
@@ -176,14 +201,14 @@
                 <!--Proyecto 4-->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
-                        <img src="imagen/descarga (2).jpeg" alt="Proyecto 1">
+                        <img src="imagen/descarga (2).jpeg"  alt="Proyecto 1">
                         <div class="overlay">
-                            <p>Proyecto 4</p>
+                            <p>Proximamente</p>
                             <div class="iconos-contenedor">
                                 <a href="https://github.com/Max033" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github"></i>
                                 </a>
-                                <a href="https://github.com/Max033/Curriculum-Vitae.git" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Max033/Game-of-life.git" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-laptop"></i>
                                 </a>
                             </div>
@@ -194,9 +219,9 @@
                 <!--Proyecto 5-->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
-                        <img src="imagen/descarga (3).jpeg" alt="Proyecto 1">
+                        <img src="imagen/descarga (3).jpeg"  alt="Proyecto 1">
                         <div class="overlay">
-                            <p>Proyecto 5</p>
+                            <p>Proximamente</p>
                             <div class="iconos-contenedor">
                                 <a href="https://github.com/Max033" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github"></i>
@@ -212,14 +237,14 @@
                 <!--Proyecto 6-->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
-                        <img src="imagen/descarga (4).jpeg" alt="Proyecto 1">
+                        <img src="imagen/descarga (4).jpeg"  alt="Proyecto 1">
                         <div class="overlay">
-                            <p>Proyecto 6</p>
+                            <p>Proximamente</p>
                             <div class="iconos-contenedor">
                                 <a href="https://github.com/Max033" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github"></i>
                                 </a>
-                                <a href="https://github.com/Max033/Curriculum-Vitae.git" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Max033/Game-of-life.git" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-laptop"></i>
                                 </a>
                             </div>
@@ -235,8 +260,8 @@
         </a>
     </section>
 
-    <!--Testimonios-->
-    <section id="Testimonios" class="testimonios seccion-clara">
+    <!-------------------Seccion de Testimonios------------------->
+    <section id="Testimonios" class="testimonios seccion-oscura">
         <h2 class="seccion-titulo">Testimonios</h2>
         <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
 
@@ -288,9 +313,9 @@
           </div>
     </section>
 
-    <!--Contacto-->
+    <!-----------------Seccion de Contacto------------------->
 
-    <!--formulario-->
+    <!-------------------formulario------------------->
     <section id="Contacto" class="contacto seccion-oscura">
             <div class="container">
                 <div class="container text-center rectangulo d-flex justify-content-evenly">
@@ -314,7 +339,7 @@
                 </div>
             </div>
     </section>
-    <!--Contact-->    
+    <!-------------------Contact------------------->    
     <div id="Contacto" class="container-fluid formulario-principal d-flex flex-column  seccion-oscura">
         <form action="https://formsubmit.co/maximiliano.iacoboni@gmail.com" method="POST" class="row needs-validation"  >
             
@@ -364,12 +389,12 @@
                 <button type="subnit" class="btn btn-outline-secondary">Enviar</button>
             </div>
     
-            <input type="hidden" name="_next" value="http://127.0.0.1:5502/">
+            <input type="hidden" name="_next" value="https://max033.github.io/Max-Front-End.github.io/">
             <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
 
-    <!-- Pie de pagina -->
+    <!-------------------Seccion de Pie de pagina ------------------->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
         <img class="footer-logo rounded-circle" src="imagen/icon.png" width="1px" alt="foto de Maximiliano" >
         <p class="footer-texto text-center ">Aprendo y creo todos los dias <br>Creemos un proyecto juntos!</p>
@@ -395,6 +420,7 @@
             Creado por Esteban Maximiliano Iacoboni (2023) &#169;
         </div>
     </footer>
+
     <!-- JS Validacion-->
     <script src="js/function.js"></script>
     <!-- JS Boostrap-->
